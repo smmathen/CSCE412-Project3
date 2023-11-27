@@ -79,14 +79,14 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>Shawn's CSCE 412 - Cloud Computing Page</h1>
+                <h1 id="spinHeader">Shawn's CSCE 412 - Cloud Computing Page</h1>
                 <hr>
                 <p>This demo's primary goal is to learn how to use AWS cloud to launch you own website!</p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
                 <br />
                 <br />
                 <!-- <h1>Test text for documentation!</h1> -->
-                <!-- <a href="src/secret.html" class="btn btn-primary btn-xl page-scroll">Secret Page 🤫</a> -->
+                <a href="src/secret.html" class="btn btn-primary btn-xl page-scroll">Secret Page 🤫</a>
             </div>
         </div>
     </header>
@@ -290,6 +290,18 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#spinHeader').click(function () {
+                $(this).addClass('spin-animation');
+                setTimeout(function () {
+                    $('#spinHeader').removeClass('spin-animation');
+                }, 3000); // 3 seconds for 3 spins
+            });
+        });
+    </script>
 
 </body>
 
