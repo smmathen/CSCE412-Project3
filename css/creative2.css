@@ -1,0 +1,163 @@
+/* Global Styles */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    /* Changed font to Roboto */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    /* Changed default text color */
+}
+
+a {
+    color: #4CAF50;
+    /* Changed link color to green */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    /* Smooth transition for link color */
+}
+
+a:hover {
+    color: #388E3C;
+    /* Darker green on hover */
+}
+
+/* Navbar Styles */
+
+.navbar-default {
+    background-color: #222;
+    border: none;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+    color: #fff;
+    font-size: 24px;
+}
+
+.navbar-default .navbar-header .navbar-brand:hover {
+    color: #4CAF50;
+    /* Green color on hover */
+}
+
+.navbar-default .nav>li>a {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.navbar-default .nav>li>a:hover {
+    color: #4CAF50;
+    /* Green color on hover */
+}
+
+/* Header Styles */
+
+header {
+    position: relative;
+    height: 80vh;
+    /* Changed height to cover most of the viewport */
+    background-image: url('../img/header2.png');
+    /* Placeholder image */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 4em;
+    /* Larger font size */
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.5em;
+    /* Larger font size */
+    color: #eee;
+    /* Slightly off-white text */
+}
+
+/* Section Styles */
+
+section {
+    padding: 80px 0;
+    /* Increased padding */
+}
+
+.section-heading {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Button Styles */
+
+.btn-default,
+.btn-primary {
+    padding: 10px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border: 2px solid #333;
+}
+
+.btn-default:hover {
+    color: #fff;
+    background-color: #333;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #4CAF50;
+    border: 2px solid #4CAF50;
+}
+
+.btn-primary:hover {
+    background-color: #388E3C;
+    border-color: #388E3C;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 3em;
+        /* Adjusted font size for smaller screens */
+    }
+
+    header p {
+        font-size: 1.2em;
+        /* Adjusted font size for smaller screens */
+    }
+}
