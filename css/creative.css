@@ -474,3 +474,22 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #222;
 }
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(1080deg);
+    }
+
+    /* 3 full spins (3 * 360deg) */
+}
+
+.spin-animation {
+    animation: spin 3s ease-in-out;
+    /* Adjust the duration for 3 spins */
+    animation-iteration-count: 1;
+    /* Run the animation only once */
+}

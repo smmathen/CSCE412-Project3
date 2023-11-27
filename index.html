@@ -29,12 +29,15 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
 
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
 </head>
 
@@ -79,7 +82,7 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>Shawn's CSCE 412 - Cloud Computing Page</h1>
+                <h1 id="spinHeader">Shawn's CSCE 412 - Cloud Computing Page</h1>
                 <hr>
                 <p>This demo's primary goal is to learn how to use AWS cloud to launch you own website!</p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
@@ -278,18 +281,18 @@
     </section>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#spinHeader').click(function () {
+                $(this).addClass('spin-animation');
+                setTimeout(function () {
+                    $('#spinHeader').removeClass('spin-animation');
+                }, 3000); // 3 seconds for 3 spins
+            });
+        });
+    </script>
 
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/creative.js"></script>
 
 </body>
 
